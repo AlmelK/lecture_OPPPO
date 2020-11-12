@@ -20,7 +20,15 @@ double my_pow(double num, int powNum) {
 
 int main() {
 	
-	cout << "2^8 = " << my_pow(2, 8) << endl;
-	system("pause");
-	return 0;
+	double number = my_pow(2, 8);
+	if (number == 0) {
+		cout << "Error, only positive degree!" << endl;
+		system("pause");
+		return 0;
+	}
+	else {
+		cout << "2^8 = " << my_pow(2, 8) << endl;
+		system("pause");
+		return 0;
+	}
 }
